@@ -1,0 +1,21 @@
+iosxr:
+  username: 'lacnic'
+  password: 'lacnic'
+  platform: 'iosxr'
+  port: 22
+
+site_1:
+    data:
+      ntp: a.ntp.br
+
+site_2:
+    data:
+      ntp: b.ntp.br
+
+site_3:
+    data:
+      ntp: c.ntp.br
+
+
+
+      

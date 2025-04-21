@@ -1,0 +1,19 @@
+R1:
+  hostname: '192.168.246.95'
+  groups:
+    - iosxr
+    - site_1
+
+R2:
+  hostname: '192.168.246.96'
+  groups:
+    - iosxr
+    - site_1
+
+R3:
+  hostname: '192.168.246.102'
+  groups:
+    - iosxr
+    - site_3
+
+    
