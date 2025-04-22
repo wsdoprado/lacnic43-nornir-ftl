@@ -39,7 +39,7 @@ With this project, you can:
 4. Create a .env file in the root directory and add your credentials:
    ```ini
    NETBOX_URL="http://localhost:8000/"
-   NORNIR_TOKEN=
+   NETBOX_TOKEN=
    USERNAME="lacnic"
    PASSWORD="lacnic"
 5. Configure your Nornir inventory under inventory/:
