@@ -19,6 +19,7 @@ With this project, you can:
 - [Rich](https://github.com/Textualize/rich) 
 - [NETCONF](https://h4ndzdatm0ld.github.io/nornir_netconf/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/) (for environment variable management)
+- [NetBox](https://github.com/netbox-community/netbox-docker)
 
 ## 🚀 Getting Started
 
