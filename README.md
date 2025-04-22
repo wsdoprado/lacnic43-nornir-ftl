@@ -17,7 +17,7 @@ With this project, you can:
 - [NAPALM](https://napalm.readthedocs.io/) 
 - [Netmiko](https://github.com/ktbyers/netmiko)
 - [Rich](https://github.com/Textualize/rich) 
-- [NETCONF](https://pandas.pydata.org/](https://h4ndzdatm0ld.github.io/nornir_netconf/)
+- [NETCONF](https://h4ndzdatm0ld.github.io/nornir_netconf/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/) (for environment variable management)
 
 ## 🚀 Getting Started
@@ -44,11 +44,11 @@ With this project, you can:
    PASSWORD="lacnic"
 5. Configure your Nornir inventory under inventory/:
 
-    hosts.yaml
+    - hosts.yaml
 
-    groups.yaml
+    - groups.yaml
 
-    defaults.yaml
+    - defaults.yaml
 
 6. Run the show_inventory.py script:
    ```bash
