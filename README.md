@@ -1,4 +1,4 @@
-# 🤖 Nornir - Python Framework for Network Automation
+# 🤖 Nornir - Python Framework for Network Automation - LACNIC43 - São Paulo
 
 This project leverages the **[Nornir](https://nornir.tech/)** framework to automate network tasks using Python. Nornir provides a scalable and customizable approach to network automation, enabling you to manage multiple devices programmatically and efficiently.
 
@@ -14,10 +14,10 @@ With this project, you can:
 
 - Python 3.10
 - [Nornir](https://nornir.tech/)
-- [NAPALM](https://napalm.readthedocs.io/) (optional)
+- [NAPALM](https://napalm.readthedocs.io/) 
 - [Netmiko](https://github.com/ktbyers/netmiko)
-- [Rich](https://github.com/Textualize/rich) (for logging and CLI output)
-- [Pandas](https://pandas.pydata.org/) (for data processing and reports)
+- [Rich](https://github.com/Textualize/rich) 
+- [NETCONF](https://pandas.pydata.org/](https://h4ndzdatm0ld.github.io/nornir_netconf/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/) (for environment variable management)
 
 ## 🚀 Getting Started
