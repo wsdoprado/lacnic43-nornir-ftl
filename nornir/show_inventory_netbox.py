@@ -1,32 +1,32 @@
 #!/opt/lacnic43-nornir-ftl/venv/bin/python3.10
 
-from nornir import InitNornir
-from dotenv import load_dotenv
-import os
+from load_environment import load_environment
+from nornir_setup import init_nornir
 
-#Load the data on the .env file
-load_dotenv()
+def display_inventory(nr):
+    """
+    Displays all hosts and their group associations.
+    """
+    print("\n📋 Inventory Hosts and Their Groups:\n")
+    for host in nr.inventory.hosts.values():
+        groups = [group.name for group in host.groups]
+        print(f"- {host.name}: {host.hostname} | Groups: {groups}")
+    print()
 
-NETBOX_TOKEN = os.getenv("NETBOX_TOKEN")
-NETBOX_URL = os.getenv("NETBOX_URL")
 
-nr = InitNornir(
-        runner={"plugin": "threaded", "options": {"num_workers": 20}},
-        inventory={
-            "plugin": "NetBoxInventory2",
-            "options": {
-                "nb_url": NETBOX_URL,
-                "nb_token": NETBOX_TOKEN,
-                "filter_parameters": {"region": "br", "site": ["ce","rj","sp"], "status": "active", "platform": "iosxr"},
-                "ssl_verify": False}
-        })
+def main():
+    # Load env file with credentials
+    env = load_environment()
 
-# Exibe os hosts e seus grupos
-print("\n📋 Hosts do Inventário e seus Grupos:\n")
-for host in nr.inventory.hosts.values():
-    groups = [g.name for g in host.groups]
-    print(f"- {host.name}: {host.hostname} | Grupos: {groups}")
+    # Start Nornir Framework
+    nr = init_nornir(env) 
 
-print("\n")
+    # Run display_inventory task
+    display_inventory(nr)
+
+
+if __name__ == "__main__":
+    main()
+
 
 

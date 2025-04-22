@@ -9,7 +9,7 @@ from nornir import InitNornir
 def main():
     # Initialize Nornir with config file and threaded runner
     nr = InitNornir(
-        config_file="./config.yaml",
+        config_file="./inventory/config.yaml",
         runner={"plugin": "threaded", "options": {"num_workers": 20}}
     )
 
@@ -24,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
