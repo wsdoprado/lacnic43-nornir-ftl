@@ -52,15 +52,11 @@ With this project, you can:
 
 6. Run the show_inventory.py script:
    ```bash
-    python main.py
+    python show_inventory.py
 
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue, fork the project, or submit a pull request.
 📄 License
 
 This project is licensed under the MIT License.
 
-Made with 🧠 by Your Name
+Made with 🧠 by Eng. William Prado
    
