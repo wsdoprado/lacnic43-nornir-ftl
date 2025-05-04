@@ -31,3 +31,5 @@ def init_nornir(env: dict):
     nr.inventory.defaults.password = env['passw']
 
     return nr
+
+

@@ -1,0 +1,11 @@
+connection_options:
+  netconf:
+    port: 830
+    extras:
+      hostkey_verify: false
+      allow_agent: false
+      look_for_keys: false
+      timeout: 60
+
+
+
